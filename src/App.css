@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+:root {
+  --light-theme-navbar-color: #3f51b5; /* Original Material-UI primary blue */
+  --dark-theme-navbar-color: #333333; /* Dark grey */
+  --light-theme-background-color: #ffffff; /* Light theme background color */
+  --dark-theme-background-color: #121212; /* Dark theme background color */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.light {
+  --background-color: var(--light-theme-background-color);
+  --text-color: #000000;
+  --navbar-color: var(--light-theme-navbar-color);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.dark {
+  --background-color: var(--dark-theme-background-color);
+  --text-color: #ffffff;
+  --navbar-color: var(--dark-theme-navbar-color);
 }
 
-.App-link {
-  color: #61dafb;
+body.light {
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
-@keyframes App-logo-spin {
+body.dark {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
   }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
 }

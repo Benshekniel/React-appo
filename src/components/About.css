@@ -1,0 +1,52 @@
+/* About.css */
+
+.about-container {
+  padding: 20px;
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.about-container.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.about-container h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #007bff; /* Original color for the active link */
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a.active {
+  font-weight: bold;
+}
+
+.history-section,
+.mission-section,
+.team-section,
+.values-section {
+  margin-top: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
