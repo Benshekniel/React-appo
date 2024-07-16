@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { useParams, Link, Routes, Route } from "react-router-dom";
-import "./ContactUs.css"; // Make sure to import your CSS file
+import { useParams, Link } from "react-router-dom";
+import "./ContactUs.css"; 
 
-// Component for Sales Department Details
 const SalesDetails = () => (
   <div>
     <h4>Sales Department</h4>
@@ -12,16 +11,12 @@ const SalesDetails = () => (
   </div>
 );
 
-// Component for Support Department Details
 const SupportDetails = () => (
   <div>
     <h4>Support Department</h4>
     <p>Email: support@example.com</p>
     <p>Phone: +1234567890</p>
-    <p>
-      Address: 456 Global Ave, Floor 5, International Business Park, London, UK
-      NW1 5DL
-    </p>
+    <p> Address: 456 Global Ave, Floor 5, International Business Park, London, UK NW1 5DL</p>
   </div>
 );
 
@@ -56,11 +51,10 @@ const ContactUs = () => {
     } else {
       setErrors({});
       setSuccess(true);
-      // Reset form fields
       setName("");
       setEmail("");
       setMessage("");
-      // Optionally, send form data to the server here
+
     }
   };
 

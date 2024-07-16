@@ -1,30 +1,30 @@
 import React from "react";
-import "./Team.css"; // Import the CSS for styling
 import picOne from "./Images/team1.jpeg";
 import picTwo from "./Images/Pic03.jpeg";
 import picThree from "./Images/Pic02.jpg";
 import picFour from "./Images/team4.jpeg";
+import "./Team.css"; 
 
 const teamMembers = [
   {
     name: "John Doe",
     position: "CEO",
-    image: picOne, // Replace with actual image path
+    image: picOne, 
   },
   {
     name: "Jane Smith",
     position: "CTO",
-    image: picTwo, // Replace with actual image path
+    image: picTwo, 
   },
   {
     name: "Sam Wilson",
     position: "CFO",
-    image: picThree, // Replace with actual image path
+    image: picThree,
   },
   {
     name: "Emily Davis",
     position: "COO",
-    image: picFour, // Replace with actual image path
+    image: picFour, 
   },
 ];
 

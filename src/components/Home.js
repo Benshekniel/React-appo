@@ -33,7 +33,7 @@ const CallToActionButton = styled.button`
   display: inline-block;
   padding: 10px 20px;
   font-size: 1.2em;
-  background-color: #007bff; /* Example button color */
+  background-color: #007bff; 
   color: white;
   text-decoration: none;
   border: none;
@@ -41,7 +41,7 @@ const CallToActionButton = styled.button`
   transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: #0056b3; /* Darker shade on hover */
+    background-color: #0056b3; 
   }
 `;
 
@@ -50,7 +50,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  text-align: center; /* Ensure text alignment for all content */
+  text-align: center; 
 `;
 
 const TopRightContainer = styled.div`
