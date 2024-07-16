@@ -37,14 +37,14 @@
   padding: 10px 20px;
   font-size: 1em;
   cursor: pointer;
-  background-color: #3f51b5; /* Original Material-UI primary blue */
+  background-color: #3f51b5;
   color: rgb(255, 255, 255);
   border: none;
   border-radius: 5px;
 }
 
 .contactus-container form button:hover {
-  background-color: #303f9f; /* Darker shade of the primary blue */
+  background-color: #303f9f; 
 }
 
 .contactus-container .error-message {
@@ -67,7 +67,7 @@
   margin-right: 5px;
   font-size: 1em;
   cursor: pointer;
-  background-color: #3f51b5; /* Original Material-UI primary blue */
+  background-color: #3f51b5; 
   border: none;
   border-radius: 5px;
 }

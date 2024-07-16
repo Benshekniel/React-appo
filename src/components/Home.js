@@ -2,10 +2,8 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-// Import your background image or use a URL directly
 import backgroundImage from "./Images/ground.png";
 
-// Styled components for the hero section
 const HeroSection = styled.section`
   background-image: url(${backgroundImage});
   background-size: cover;

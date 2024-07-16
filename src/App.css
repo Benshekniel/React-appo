@@ -1,8 +1,8 @@
 :root {
-  --light-theme-navbar-color: #3f51b5; /* Original Material-UI primary blue */
-  --dark-theme-navbar-color: #333333; /* Dark grey */
-  --light-theme-background-color: #ffffff; /* Light theme background color */
-  --dark-theme-background-color: #121212; /* Dark theme background color */
+  --light-theme-navbar-color: #3f51b5;
+  --dark-theme-navbar-color: #333333;
+  --light-theme-background-color: #ffffff; 
+  --dark-theme-background-color: #121212; 
 }
 
 body {

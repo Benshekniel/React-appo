@@ -5,7 +5,7 @@ import { AppBar, Toolbar, IconButton, Typography } from "@material-ui/core";
 import Brightness7Icon from "@material-ui/icons/Brightness7";
 import Brightness2Icon from "@material-ui/icons/Brightness2";
 import styled from "styled-components";
-import logo from "./logoPic.png"; // Adjust the path to your logo
+import logo from "./logoPic.png"; 
 
 const StyledNavLink = styled(NavLink)`
   color: inherit;

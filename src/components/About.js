@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, Routes, Route } from "react-router-dom";
-import "./About.css"; // Make sure to import the CSS file
+import "./About.css"; 
 import History from "./History";
 import Team from "./Team";
 import Values from "./Values";
