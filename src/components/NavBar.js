@@ -2,8 +2,8 @@ import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { ThemeContext } from "../contexts/ThemeContext";
 import { AppBar, Toolbar, IconButton, Typography } from "@material-ui/core";
-import Brightness7Icon from "@material-ui/icons/Brightness7";
-import Brightness2Icon from "@material-ui/icons/Brightness2";
+import Brightness7Icon from "@material-ui/icons/Brightness5";
+import Brightness2Icon from "@material-ui/icons/Brightness4";
 import styled from "styled-components";
 import logo from "./logoPic.png"; 
 
@@ -33,7 +33,7 @@ const NavBar = () => {
       <Toolbar>
         <Logo src={logo} alt="Company Logo" />
         <Typography variant="h6" style={{ flexGrow: 1 }}>
-          DEV
+          DEVLO
         </Typography>
         <StyledNavLink to="/">Home</StyledNavLink>
         <StyledNavLink to="/about/mission">About</StyledNavLink>

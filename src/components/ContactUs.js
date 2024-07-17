@@ -36,6 +36,7 @@ const ContactUs = () => {
   const validateForm = () => {
     const errors = {};
     if (!name.trim()) errors.name = "Name is required";
+    else if(!/^[a-zA-Z\s]*$/.test(name)) errors.name = "Name is invalid";
     if (!email.trim()) errors.email = "Email is required";
     else if (!/\S+@\S+\.\S+/.test(email)) errors.email = "Email is invalid";
     if (!message.trim()) errors.message = "Message is required";
@@ -73,34 +74,17 @@ const ContactUs = () => {
         <form onSubmit={handleSubmit}>
           <div>
             <label>Name:</label>
-            <input
-              type="text"
-              name="name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              required
-            />
+            <input className="input" type="text" name="name" value={name} onChange={(e) => setName(e.target.value)} required />
             {errors.name && <p className="error-message">{errors.name}</p>}
           </div>
           <div>
             <label>Email:</label>
-            <input
-              type="email"
-              name="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-            />
+            <input className="input" type="email" name="email"  value={email}  onChange={(e) => setEmail(e.target.value)}  required/>
             {errors.email && <p className="error-message">{errors.email}</p>}
           </div>
           <div>
             <label>Message:</label>
-            <textarea
-              name="message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              required
-            ></textarea>
+            <textarea className="input" name="message"  value={message}  onChange={(e) => setMessage(e.target.value)}  required></textarea>
             {errors.message && (
               <p className="error-message">{errors.message}</p>
             )}
@@ -111,7 +95,7 @@ const ContactUs = () => {
 
       <div className="contact">
         <hr />
-        {/* Dynamic Details based on route parameter */}
+
         <div className="department-details">
           <h2>Department Details</h2>
           <br />
@@ -119,17 +103,12 @@ const ContactUs = () => {
           {department === "support" && <SupportDetails />}
         </div>
 
-        {/* Links to switch between departments */}
         <div className="department-links">
           <button>
-            <Link className="link" to="/contact-us/sales">
-              Sales
-            </Link>
+            <Link className="link" to="/contact-us/sales"> Sales </Link>
           </button>
           <button>
-            <Link className="link" to="/contact-us/support">
-              Support
-            </Link>
+            <Link className="link" to="/contact-us/support"> Support </Link>
           </button>
         </div>
       </div>

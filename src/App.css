@@ -1,8 +1,8 @@
 :root {
-  --light-theme-navbar-color: #3f51b5;
-  --dark-theme-navbar-color: #333333;
-  --light-theme-background-color: #ffffff; 
-  --dark-theme-background-color: #121212; 
+  --light-theme-navbar-color: #005fa8;
+  --dark-theme-navbar-color: #150734;
+  --light-theme-background-color: #e3ebed  ; 
+  --dark-theme-background-color: #081534; 
 }
 
 body {

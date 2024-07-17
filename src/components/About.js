@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, Routes, Route } from "react-router-dom";
-import "./About.css"; 
 import History from "./History";
 import Team from "./Team";
 import Values from "./Values";
 import Mission from "./Mission";
+import "./About.css"; 
 
 const About = () => {
   const [animationClass, setAnimationClass] = useState("");

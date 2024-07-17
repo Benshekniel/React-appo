@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-
 import backgroundImage from "./Images/ground.png";
 
 const HeroSection = styled.section`
@@ -47,8 +46,10 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 20px 20px 20px 20px;
   text-align: center; 
+  background-color: #0F2557; 
+  border-radius: 25px
 `;
 
 const TopRightContainer = styled.div`
@@ -136,7 +137,7 @@ const Home = () => {
         {!nameSubmitted ? (
           <Container>
             <HeroHeading>Enter your name</HeroHeading>
-            <Input
+            <Input style={{borderRadius: 10}}
               type="text"
               value={inputValue}
               onChange={handleInputChange}

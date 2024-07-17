@@ -3,6 +3,10 @@
   padding: 20px;
 }
 
+.team-container h2{
+  margin-bottom: 25px;
+}
+
 .team-members {
   display: flex;
   justify-content: center;

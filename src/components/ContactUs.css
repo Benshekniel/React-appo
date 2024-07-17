@@ -77,6 +77,10 @@
   text-decoration: none;
 }
 
+.input {
+  border-radius: 8px;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
